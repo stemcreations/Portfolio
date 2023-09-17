@@ -1,9 +1,9 @@
 {% load static %}
 
 <div class="nav-bar-container">
-    <a href="/">
-    <h1>Logo</h1>
-</a>
+    <a href="{% url 'home' %}">
+    <img src="{% static 'images/logo_l.png' %}" alt="logo" class="logo">
+    </a>
     <div class="nav-bar">
         <a href="{% url 'home' %}">Home</a>
         <a href="{% url 'portfolio' %}">Portfolio</a>
