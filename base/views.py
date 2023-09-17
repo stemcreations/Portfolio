@@ -11,3 +11,7 @@ def about(request):
 def portfolio(request):
     context = {}
     return render(request, 'base/portfolio.html', context)
+
+def contact(request):
+    context = {}
+    return render(request, 'base/contact.html', context)

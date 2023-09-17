@@ -1,23 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
+:root {
+    --color-main: #999999;
+    --color-main-light: #bebebe;
+    --color-dark: #333333;
+    --color-dark-light: #666666;
+    --color-dark-medium: #4d4d4d;
+    --color-light: #e5e5e5;
+    --color-light-gray: #b2bdbd;
+    --color-gray: #8b8b8b;
+}
 
 * {
-    background-color: #505050;
+    font-family: "DM Sans", -apple-system, BlackMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    font-size: inherit;
 }
 
 body {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
     margin: 0;
     padding: 0;
 }
 
+.nav-bar-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #727272;
+
+}
+
 .footer-container {
     display: flex;
+    justify-content: space-around;
+    align-items: end;
     background-color: #727272;
     color: #fff;
     padding: 20px;
