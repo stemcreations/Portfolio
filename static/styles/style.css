@@ -21,6 +21,7 @@
 }
 
 body {
+    background-color: var(--color-light);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -55,4 +56,14 @@ body {
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+.nav-bar-container svg {
+    height: 125px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.nav-bar-container svg path{
+    fill: var(--color-dark-medium);
 }
