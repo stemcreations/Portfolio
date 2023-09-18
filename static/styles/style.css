@@ -126,3 +126,10 @@ ul li:hover {
 .nav-bar-container svg path {
     fill: var(--color-dark-medium);
 }
+
+.main-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+}
