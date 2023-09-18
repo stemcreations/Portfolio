@@ -11405,3 +11405,17 @@ portfolio/__pycache__/__init__.cpython-311.pyc
 portfolio/__pycache__/settings.cpython-311.pyc
 portfolio/__pycache__/urls.cpython-311.pyc
 portfolio/__pycache__/wsgi.cpython-311.pyc
+portfolio/__pycache__/__init__.cpython-311.pyc
+portfolio/__pycache__/settings.cpython-311.pyc
+portfolio/__pycache__/urls.cpython-311.pyc
+portfolio/__pycache__/wsgi.cpython-311.pyc
+base/__pycache__/__init__.cpython-311.pyc
+base/__pycache__/admin.cpython-311.pyc
+base/__pycache__/apps.cpython-311.pyc
+base/__pycache__/forms.cpython-311.pyc
+base/__pycache__/models.cpython-311.pyc
+base/__pycache__/urls.cpython-311.pyc
+base/__pycache__/views.cpython-311.pyc
+base/migrations/__pycache__/__init__.cpython-311.pyc
+base/migrations/__pycache__/0001_initial.cpython-311.pyc
+base/migrations/__pycache__/0002_contact.cpython-311.pyc
