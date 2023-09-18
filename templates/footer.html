@@ -2,20 +2,18 @@
 <footer>
     <div class="footer-container">
         <div class="footer-left">
-            <h3>Quick Links</h3>
             <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About Me</a></li>
-                <li><a href="portfolio.php">Portfolio</a></li>
-                <li><a href="contact.php">Contact Me</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'portfolio' %}">Projects</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </div>
         <div class="footer-right">
-            <h3>Follow Me</h3>
             <ul>
                 <li><a href="https://www.github.com/stemcreations">GitHub</a></li>
-                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i>Instagram</a></li>
-                <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i>LinkedIn</a></li>   
+                <li><a href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
             </ul>
         </div>
         <div class="footer-bottom">

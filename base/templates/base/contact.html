@@ -1,5 +1,15 @@
 {% extends 'main.html' %}
 
 {% block content %}
-
+<div>
+    <form class="form" action="" method="POST">
+        {% csrf_token %}
+        {% for field in form %}
+        <div class="form-group">
+            <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+            {{ field }}
+        </div>
+        {% endfor %}
+    </form>
+</div>
 {% endblock content %}

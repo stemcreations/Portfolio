@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
+from .forms import ContactForm
 
 def home(request):
     context = {}
@@ -13,5 +14,12 @@ def portfolio(request):
     return render(request, 'base/portfolio.html', context)
 
 def contact(request):
-    context = {}
-    return render(request, 'base/contact.html', context)
+    form = ContactForm()
+
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+        
+    return render(request, 'base/contact.html', {'form': form})
