@@ -225,7 +225,7 @@ Nav Styles
     right: 5%;
     margin-left: -2em;
     margin-top: -45px;
-    margin-right: 10px;
+    margin-right: 20px;
     width: 2em;
     height: 45px;
     z-index: 5;
@@ -264,4 +264,30 @@ Animations
   }
 
 
+/* -------------- CSS BLOCK FOR PROJECTS PAGE -------------- */
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: rgb(124, 124, 141);
+    height: 300px;
+    width: 300px;
+}
+
+.project-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
   
