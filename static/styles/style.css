@@ -9,7 +9,7 @@
     --color-light: #e5e5e5;
     --color-light-gray: #b2bdbd;
     --color-gray: #8b8b8b;
-    --color-gray-transparent: rgba(190, 190, 190, 0.466);
+    --color-gray-transparent: rgba(235, 235, 235, 0.466);
 }
 
 /* ----------- CSS FOR SMALL SCREEN SIZE ELEMENTS ---------- */
@@ -319,7 +319,7 @@ Animations
     border-radius: 5px;
     margin: 10px;
     height: auto;
-    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .project-card-image-container {
@@ -351,34 +351,24 @@ Animations
 
 .project-card-content {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex: 2;
     padding: 10px;
 }
 
-.project-card-content a {
-    color: transparent;
-    text-decoration: none;
+.card-details {
+    margin-right: 30px;
 }
 
-.project-details-btn {
-    background: var(--color-dark-medium);
-    color: var(--color-light);
-    padding: 0px 32px;
-    border: 0;
-    border-radius: 1.5rem;
-    font-size: 1.5rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: transform 500ms;
-    margin-top: 4px;
+.chevron {
+    font-size: 45px;
+    transition: transform 750ms;
 }
 
-.project-details-btn:hover,
-.project-details-btn:focus{
-    transform: scale(1.1);
-    transition: transform 250ms;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.project-card:hover {
+    .chevron {
+        transform: scale(1.5);
+        transition: transform 250ms;
+    }
 }
