@@ -72,7 +72,7 @@
 
 /* --------- BODY CSS FOR MAIN THEME COLORS AND SIZES --------- */
 body {
-    background: url("/static/images/background2.jpg") no-repeat center center fixed;
+    background: url("/static/images/bg4.jpg") no-repeat center center fixed;
     color: var(--color-dark-medium);
     height: 100vh;
     display: flex;
