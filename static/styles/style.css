@@ -84,6 +84,11 @@ body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-dark-medium);
+}
+
 p {
     color: var(--color-dark-medium);
     margin: 0;
@@ -324,6 +329,7 @@ Animations
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+
 .project-card-image-container {
     display: flex;
     flex: 3;
@@ -359,16 +365,33 @@ Animations
     padding: 10px;
 }
 
-.card-details {
+.card-details{
     margin-right: 30px;
+    color: var(--color-dark-medium);
+}
+
+.cd-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-dark-medium);
+    margin-bottom: 10px;
+}
+
+.cd-disc {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-dark-medium);
+    margin-bottom: 10px;
 }
 
 .chevron {
+    color: var(--color-dark-medium);
     font-size: 45px;
     transition: transform 750ms;
 }
 
 .project-card:hover {
+    cursor: pointer;
     .chevron {
         transform: scale(1.5);
         transition: transform 250ms;
