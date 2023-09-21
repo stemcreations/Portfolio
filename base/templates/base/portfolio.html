@@ -6,90 +6,22 @@
 <div class="portfolio-container">
 
     <ul class="flex-list">
+        {% for project in projects %}
         <div class="project-card">   
-            <a href="#">
+            <a href="{% url 'project' project.id %}">
             <div class="project-card-image-container">
-                    <img src="{% static 'images/background3.jpg' %}" alt="Project Image">
+                    <img src="{% static project.main_image.url %}" alt="Project Image">
             </div>
             <div class="project-card-content">
                 <div class="card-details">
-                    <h3 class="cd-title">EZ Salt</h3>
-                    <p class="cd-disc">Freelance Project for startup - Flutter/Firebase</p>
+                    <h3 class="cd-title">{{ project.title }}</h3>
+                    <p class="cd-disc">{{ project.short_description }}</p>
                 </div>
                 <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
             </div>
             </a>
         </div>
-        <div class="project-card">   
-            <a href="#">
-            <div class="project-card-image-container">
-                    <img src="{% static 'images/logo_l.png' %}" alt="Project Image">
-            </div>
-            <div class="project-card-content">
-                <div class="card-details">
-                    <h3 class="cd-title">Green Thumb</h3>
-                    <p class="cd-disc">Side Project - ESP32, Django, Raspberry-Pi</p>
-                </div>
-                <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
-            </div>
-            </a>
-        </div>
-        <div class="project-card">   
-            <a href="#">
-            <div class="project-card-image-container">
-                    <img src="{% static 'images/logo_l.png' %}" alt="Project Image">
-            </div>
-            <div class="project-card-content">
-                <div class="card-details">
-                    <h3 class="cd-title">Toadcraft Designs</h3>
-                    <p class="cd-disc">Freelance Project - Django Website</p>
-                </div>
-                <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
-            </div>
-            </a>
-        </div>
-        <div class="project-card">   
-            <a href="#">
-            <div class="project-card-image-container">
-                    <img src="{% static 'images/background3.jpg' %}" alt="Project Image">
-            </div>
-            <div class="project-card-content">
-                <div class="card-details">
-                    <h3 class="cd-title">Vehicl Value Zone</h3>
-                    <p class="cd-disc">Side Project - flutter and Firebase</p>
-                </div>
-                <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
-            </div>
-            </a>
-        </div>     
-        <div class="project-card">   
-            <a href="#">
-            <div class="project-card-image-container">
-                    <img src="{% static 'images/background3.jpg' %}" alt="Project Image">
-            </div>
-            <div class="project-card-content">
-                <div class="card-details">
-                    <h3 class="cd-title">Study Budy</h3>
-                    <p class="cd-disc">Side Project - Django with user registration</p>
-                </div>
-                <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
-            </div>
-            </a>
-        </div>   
-        <div class="project-card">   
-            <a href="#">
-            <div class="project-card-image-container">
-                    <img src="{% static 'images/logo_l.png' %}" alt="Project Image">
-            </div>
-            <div class="project-card-content">
-                <div class="card-details">
-                    <h3 class="cd-title">The Twisted Knot</h3>
-                    <p class="cd-disc">Freelance Project - Django Website</p>
-                </div>
-                <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
-            </div>
-            </a>
-        </div>
+        {% endfor %}
     </ul>
     <div>
         <a href="#">View All</a>
