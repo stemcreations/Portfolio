@@ -11768,3 +11768,10 @@ penv/Lib/site-packages/Pillow-10.0.1.dist-info/WHEEL
 penv/Lib/site-packages/Pillow-10.0.1.dist-info/zip-safe
 =======
 >>>>>>> 7decc80be44462374772bc8a58e984feb7a9dcbf
+base/migrations/__pycache__/0003_project_main_image_alter_project_description.cpython-311.pyc
+base/migrations/__pycache__/0004_alter_project_main_image.cpython-311.pyc
+base/migrations/__pycache__/0005_alter_project_main_image.cpython-311.pyc
+base/migrations/__pycache__/0006_remove_project_main_image_image.cpython-311.pyc
+base/migrations/__pycache__/0007_alter_image_project.cpython-311.pyc
+base/migrations/__pycache__/0008_project_main_image_project_short_description.cpython-311.pyc
+base/migrations/__pycache__/0009_alter_project_description.cpython-311.pyc
