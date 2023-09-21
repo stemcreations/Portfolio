@@ -221,7 +221,6 @@ Nav Styles
     right: 0;
     bottom: 0;
     overflow: hidden;
-    transition: all 0.3s ease-in-out;
     transform: scale(0);
 }
 
@@ -244,7 +243,6 @@ nav a {
     font-size: 2em;
     display: inline-block;
     margin-top: 1.25em;
-    transition: color 0.2s ease-in-out;
     letter-spacing: 1px;
 }
 
