@@ -11559,6 +11559,7 @@ penv/lib/python3.9/site-packages/Pillow-10.0.1.dist-info/REQUESTED
 penv/lib/python3.9/site-packages/Pillow-10.0.1.dist-info/top_level.txt
 penv/lib/python3.9/site-packages/Pillow-10.0.1.dist-info/WHEEL
 penv/lib/python3.9/site-packages/Pillow-10.0.1.dist-info/zip-safe
+<<<<<<< HEAD
 base/admin.py
 base/__pycache__/admin.cpython-311.pyc
 base/__pycache__/models.cpython-311.pyc
@@ -11765,3 +11766,5 @@ penv/Lib/site-packages/Pillow-10.0.1.dist-info/REQUESTED
 penv/Lib/site-packages/Pillow-10.0.1.dist-info/top_level.txt
 penv/Lib/site-packages/Pillow-10.0.1.dist-info/WHEEL
 penv/Lib/site-packages/Pillow-10.0.1.dist-info/zip-safe
+=======
+>>>>>>> 7decc80be44462374772bc8a58e984feb7a9dcbf
