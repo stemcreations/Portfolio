@@ -11775,3 +11775,5 @@ base/migrations/__pycache__/0006_remove_project_main_image_image.cpython-311.pyc
 base/migrations/__pycache__/0007_alter_image_project.cpython-311.pyc
 base/migrations/__pycache__/0008_project_main_image_project_short_description.cpython-311.pyc
 base/migrations/__pycache__/0009_alter_project_description.cpython-311.pyc
+base/migrations/__pycache__/0010_alter_project_main_image.cpython-311.pyc
+base/__pycache__/models.cpython-311.pyc
