@@ -3,7 +3,7 @@
 
 {% block content %}
 
-<div class="portfolio-container">
+<!-- <div class="portfolio-container">
 
     <ul class="flex-list">
         {% for project in projects %}
@@ -23,9 +23,62 @@
         </div>
         {% endfor %}
     </ul>
+    
     <div>
-        <a href="#">View All</a>
+        <a href="#" class="open-side-drawer">View All</a>
+    </div>
+    <div id="side-drawer" class="hidden">
+        <h1>Side Drawer</h1>
+    </div>
+</div> -->
+<div class="portfolio-container">
+    <div id="side-drawer" class="hidden">
+        <h1>Side Drawer</h1>
+    </div>
+    <div class="page-content">
+        <ul class="flex-list">
+            {% for project in projects %}
+            <div class="project-card">   
+                <a href="{% url 'project' project.id %}">
+                    <div class="project-card-image-container">
+                        <img src="{% static project.main_image.url %}" alt="Project Image">
+                    </div>
+                    <div class="project-card-content">
+                        <div class="card-details">
+                            <h3 class="cd-title">{{ project.title }}</h3>
+                            <p class="cd-disc">{{ project.short_description }}</p>
+                        </div>
+                        <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </ul>
+        <div>
+            <a href="#" class="open-side-drawer">View All</a>
+        </div>
     </div>
 </div>
+
+<script>
+    function openSideDrawer() {
+        document.getElementById('side-drawer').classList.remove('hidden');
+        document.getElementById('side-drawer').classList.add('open');
+    }
+
+    function closeSideDrawer() {
+    document.getElementById('side-drawer').classList.remove('open');
+    document.getElementById('side-drawer').classList.add('hidden');
+    }   
+
+    document.querySelector('.open-side-drawer').addEventListener('click', openSideDrawer);
+
+    document.body.addEventListener('click', function (event) {
+    // Check if the click target is NOT inside the side drawer
+    if (!document.getElementById('side-drawer').contains(event.target) && !event.target.matches('.open-side-drawer')) {
+        closeSideDrawer();
+    }
+});
+</script>
 
 {% endblock content %}
